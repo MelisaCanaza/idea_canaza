@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    /* LETRA P TODO EL SITIO*/
+    color:#242423;
+    font-size: 1.6rem;
+    font-family: "poppins",sans-serif;
+    background-color: #F2F7F5;
+}
+main{
+    width: 85%; /*dando forma a todos los mains del sitio*/
+    margin: 0 auto;
+    justify-items: center;
+}

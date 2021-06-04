@@ -1,0 +1,54 @@
+
+.contenido__titulo{
+    .contenido__enlace{
+        font-family:dancing script;
+        font-size: 7rem;                        /*NOMBRE MARCA*/
+        text-decoration: none; 
+        color: #faa0a2;
+        .contenido__enlace:hover{
+            color:#ff6acd;
+        } 
+    }                   
+}
+.contenido__subtitulo{
+text-transform: uppercase;              /*SUBTITULO */
+font-family: 'open sans condensed','sans-serif';
+color: #f72585;
+font-size: 2rem;
+text-align: center;
+}
+.contenido__hamburguesa{    /*color de fondo del nav*/
+    background-color: #f2f7f5;
+}
+
+.contenido__menu{
+    margin-left: 10vh;
+    justify-content: space-evenly;
+
+    .contenido__menu--item{
+        text-transform: uppercase;
+        margin-right:10vh;
+        .contenido__menu--item:hover{
+            text-decoration: underline;
+        }
+    }
+    .contenido__menu--subitem{
+        text-transform: capitalize;
+    }
+    .contenido__menu--carrito{
+        width: 4rem;
+    }
+    .btn-outline-success{   /*boton del buscador*/
+        color: #0c0808;
+        border-color: #faa0a2;
+        background-color:#faa0a2;
+
+        .btn-outline-success:hover{
+            background-color: rgb(114, 112, 112);
+            color:#faa0a2;
+            border-color:#faa0a2;
+            
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+@import "variables.scss";
+.talles{
+    display: flex;
+    justify-content: space-around;
+    .talles__titulo{
+        background-color: #FFB5A7;
+        border: solid 1px black;
+        .talles__titulo--item{
+            border: solid 1px black;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .talles__main--item{
+        text-align: center;
+        border:solid 1px black;
+    }
+    
+} 
+.table-hover{
+    width: $width-tabla*2;        /*40vh*/      /*operacion scss*/
+}
+.tabla__titular{
+    background-color: $rosadifuminado;    /*#faa0a148*//*agrego variable */
+    text-align: center;
+}
+.tabla__subtitular{
+    margin-top: $margin-top*5;              /*operacion sass*/
+}

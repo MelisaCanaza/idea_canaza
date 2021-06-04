@@ -1,0 +1,56 @@
+
+
+.productos__imagen{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.productos__contenedor{
+    display: grid;
+    grid-template-columns:  2fr 2fr 2fr;
+    grid-column-gap: 1rem;
+    .productos__contenedor--item{                    /*se alinean por el flex*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.productos__contenedor--item p{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .productos__contenedor--item img{
+            margin-top: 5rem;
+            width: 28rem;
+        }
+        .productos__contenedor--item a{                      /*flex+ estas propiedades queda bien el enlace*/
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            background-color: #faa0a2;
+            color: #312225;
+            border-radius: 2rem;
+            padding: .2rem .5rem;
+            text-align: center;
+        }
+#productos__accesorios img{
+    width: 28rem;
+}
+#productos__accesorios h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.productos__promociones{
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+.productos__promociones--email{
+    width: 25rem;
+}
+.productos__titular--item{
+    background-color: #faa0a148;
+    text-align: center;
+    margin-top: 5rem;
+
+}

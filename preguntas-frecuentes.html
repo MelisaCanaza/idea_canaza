@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tienda online de dorothy-indumentaria femenina seccion preguntas frecuentes: encontraras las preguntas mas frecuentes que se hacen nuestros clientes y te sacaras la duda de forma mas rapida.">
+    <meta name="keywords" content="moda, indumentaria, femenina, mujeres,preguntas, respuestas">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--fuente de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"><!--bootstrap-->
+    <link rel="stylesheet" href="css/mimain.css"><!--enlace para scss-->
+    
+    <title>Dorothy-Preguntas frecuentes</title>
+  </head>
+
+  <body>
+    <header>
+              
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+          
+        <div class="container-fluid contenido__hamburguesa">
+          <div class="contenido__logo"> <!--logo-->
+            <h1 class="contenido__titulo">
+              <a class="contenido__enlace"href="index.html">Dorothy</a>
+            </h1>
+            <p class="contenido__subtitulo">indumentaria femenina</p>
+          </div> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
+          <div class="collapse navbar-collapse contenido__menu" id="navbarScroll"><!--menu-->
+            <div>
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active contenido__menu--item" aria-current="page" href="index.html">inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contenido__menu--item" href="productos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    productos      
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__new">nueva temporada</a></li>
+                    <li><a class="dropdown-item contenido__menu--subitem"href="productos.html #productos__accesorios">accesorios</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__hotsale">hot sale</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="talles-y-medidas.html">talles y medidas</a>
+                </li>                  
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="preguntas-frecuentes.html">preguntas frecuentes</a>
+                </li>
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="contactanos.html">contactanos</a>
+                </li>
+              </ul>
+
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+            <div>
+              <img class="contenido__menu--carrito" src="images/carrito.png" >
+            </div>
+          </div>                  
+        </div>
+      </nav>                     
+    </header>
+
+    <main>
+            
+      <section class="preguntas" id="mapa__preguntas"><!--AGREGUE EN ESTA SECCION BEM-->
+        <div class="preguntasFrec">
+          <h2 class="tabla__titular">preguntas frecuentes</h2>
+        </div>
+                
+        <div class="accordion " id="accordionPanelsStayOpenExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+            <button class="accordion-button preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <p class="preguntas__item--texto">¿Cómo puedo comprar?</p>
+            </button></h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show " aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">A través de nuestra web www.dorothyoficial.com o en el local mas cercano a tu domicilio</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header " id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <p class="preguntas__item--texto">¿Hacen envíos?</p>
+            </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">Sí, hacemos envíos a todo el país a través de OCA. Al finalizar tu compra podrás calcular el costo ingresando tu código postal. Podes elegir que llegue a tu casa o retirarlo en alguna sucursal</p>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <p class="preguntas__item--texto">¿El envío tiene algún costo?</p>
+            </button>
+            </h2>
+                      
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">Si tu compra iguala o supera los $4000, no tenés ningún costo.Si tu compra es inferior a $4000, una vez completes los datos se te informará el costo del envío. Siempre previo a que confirmes tu compra. Recordá que el monto de envío no esta sujeto a descuentos (salvo excepciones).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            <p class="preguntas__item--texto">¿Cómo puedo pagar mi compra?</p>
+            </button>
+            </h2>
+                
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">Podés pagarla con tarjeta de crédito o débito a través de Mercado Pago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            <p class="preguntas__item--texto">¿Puedo hacer el seguimiento de mis compras?</p>
+            </button>
+            </h2>
+            
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">¡Sí! Al finalizar el proceso de compra enviaremos un correo con su confirmación, y en cuanto se acredite el pago pasará a proceso de armado, facturación y despacho. Tan pronto salga de nuestro depósito recibirás el número de seguimiento para que puedas ver su recorrido en el sitio oficial de OCA o Saires según corresponda y conocer el estado de tu compra en todo momento. En el caso de Saires (Envío Prioritario en CABA), se envían también los datos de contacto con la empresa.Por otro lado, si pediste retiro por sucursal, te llegará un email dando aviso que la compra está en camino al local elegido, y otro más cuando se encuentre listo para retiro.IMPORTANTE: Recorda revisar tu casilla de correo no deseado en todos los casos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            <p class="preguntas__item--texto">¡No sé que talle soy!</p>
+            </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">No te preocupes, tenemos una tabla de talles por modelo disponible tanto en nuestras redes sociales como en nuestra web. Y si no estas segura podes contactarnos por whatsapp y en breve despejaremos tus dudas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+            <button class="accordion-button collapsed preguntas__item" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+            <p class="preguntas__item--texto">¿Puedo hacer el seguimiento de mis compras?</p>
+            </button>
+            </h2>
+                        
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+              <div class="accordion-body">
+                <p class="preguntas__item--texto">¡Sí! Al finalizar el proceso de compra enviaremos un correo con su confirmación, y en cuanto se acredite el pago pasará a proceso de armado, facturación y despacho.</p>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </section>
+            
+
+      <section class="registro">
+        <p class="registro__texto">¿Querés recibir nuestras ofertas?¡Registrate y comenzá a disfrutarlas!</p>
+        <form method="POST">
+            <label class="registro__label">Email</label>
+            <input class="registro__email" type="email" placeholder="email" required>
+            <button class="registro__boton">Enviar</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer><!--FOOTER-->
+            
+      <div class="footer__info">
+          <p class="footer__texto">Contacto: 011 156655-4433 </p>
+          <address class="footer__texto">dorothyoficial@dorothy.com</address>
+          <p class="footer__texto">Copyright 2021 © dorothy</p>
+          <p class="footer__texto">Dorothy Todos los derechos reservados</p>
+          <p class="footer__texto">Seguinos en nuestras redes</p>
+
+      </div>
+
+      <div class="footer__redes">
+              
+        <a class="footer__iconos" href="https://www.facebook.com" target="_BLANK"><img src="images/footer/facebook.png" alt="icono facebook" width="20" title="Facebook"></a>
+                    
+        <a class="footer__iconos" href="https://www.instagram.com" target="_BLANK"><img src="images/footer/instagram.png" alt="icono instagram" width="20" title="Instagram"></a>
+            
+        <a class="footer__iconos" href="https://www.twitter.com" target="_BLANK"><img src="images/footer/twitter.png" alt="icono twitter" width="20" title="twitter"></a>
+              
+      </div>
+          
+    </footer> 
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>    
+  </body>
+</html>

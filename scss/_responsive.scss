@@ -1,0 +1,120 @@
+/*  ....................... INDEX ........................... */
+@media (max-width: 767px) { /*para celular SECCION INDEX */
+
+    .container__carrusel--boton{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .cardex__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items:center;
+    }
+    .cardex__list--item{
+        width: 18rem;
+    }
+    .cardex__list--boton{
+        text-transform: capitalize;
+    }
+    .iconos{
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .iconos__img{
+        width: 6rem;
+    }
+    .iconos__texto{
+        font-size: 1.3rem;
+    }
+    .video{
+        display: none;
+    }
+    .registro{
+        width: 100%;
+    }
+    .registro__texto{
+        font-size: 1.5rem;
+    }
+    .registro__email{
+        width: 15rem;
+    }
+    .registro__label{
+        display: none;
+    }
+    .footer{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .footer__texto{
+        font-size: 1.3rem;
+    }
+    
+}
+@media screen and (min-width: 568px) { 
+    .carousel-dark{
+        width: 50%;
+    }
+}/*NO TOCAR NADA hasta aca. MOBILE FIRST OK*/
+@media(min-width: 768px){
+    .cardex__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .iconos{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .iconos__img {
+        width: 8rem;
+    }
+    footer {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width:1024px){
+    .cardex__list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ /* ............................ PRODUCTOS ................................*/
+ @media screen and(min-width:320px){/*MOBILE FIRST*/
+    .productos__contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #productos__new img{
+        width: 20rem;
+    }
+    #productos__accesorios img{
+        width: 20rem;
+    }
+    .productos__contenedor--item img{
+        width: 20rem;
+    }
+}
+@media (min-width:768px){
+    .productos__contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px){
+    .productos__contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ............................... TALLES Y MEDIDAS.............................*/
+@media(min-width:320px){
+    .talles{
+        flex-direction: column;
+    }
+}
+@media (min-width:768px){
+    .talles{
+    justify-content:space-evenly;
+    flex-direction: row;
+    }
+}

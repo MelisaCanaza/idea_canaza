@@ -1,0 +1,22 @@
+@each $redes in facebook, instagram, twitter{
+    .footer__iconos.#{$redes}{
+        background-image: url(images/footer/#{$redes}.png);
+    }
+}
+
+
+footer{                                         /* FOOTER */ 
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:#A5A58D;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .footer__info {
+        text-align: center;
+    }
+    .footer__redes{
+        text-align: center;
+        margin-top: .5rem;
+    
+    }      
+}

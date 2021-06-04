@@ -1,0 +1,142 @@
+@import "variables.scss";
+
+
+.contenido__info{
+    text-align: center;
+    word-spacing: .7rem;
+    font-size: bold;
+    margin-top: 2vh; 
+}
+
+.contenido__imagen{                /*img principal de index*/
+    text-align:center;
+    .contenido__imagen--item{
+        width: 100%;
+    } 
+}
+
+.container__carrusel { /*modifico el carrusel */
+    margin: 0 auto;
+    margin-bottom: 5%;
+    .carousel-dark{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        .container__carrusel--parrafo{
+            background-color: rgba(0, 0, 0, 0.438);
+            .container__carrusel--texto{
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .container__carrusel--contenedorboton{
+        display: flex;
+        justify-content: center;
+        .container__carrusel--boton{        /*ENLACE "VER TODOS LOS PRODUCTOS */
+            text-transform: uppercase;
+            text-align: center;
+            background-color: #faa0a2;
+            color: #312225;
+            border-radius: 2rem;
+            padding: 0.5rem 1.5em;
+            font-size: $font-predeterminado - 0.1;                  /*1.4rem APLICANDO  OPERACION SCSS*/
+            margin-top: $margin-top+1;                              /*2 rem*/
+            .container__carrusel--boton:hover{
+                text-decoration: underline;
+                background-color: rgb(114, 112, 112);
+                color: #faa0a2;
+                
+            }                
+        }         
+    }
+}/*fin seccion carrusel+enlace*/
+
+.cardex__titular{       /*SECCION DE CARDS DEL INDEX*/
+    background-color: $rosadifuminado;                /* #faa0a148  APLICO VARIABLE*/
+    text-align: center;    
+}
+.cardex__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    .cardex__list--item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+        width: 25rem;
+        .card-body {
+            text-align: center;
+            .cardex__list--boton{
+                color: #000;
+                background-color: #faa0a2;
+                border-color: #000;
+                font-size: 1.5rem;
+                .cardex__list--boton:hover{
+                    background-color: rgb(114, 112, 112);
+                    color: #faa0a2;
+                    border-color: #faa0a2;
+                }
+            }
+            .card-title{
+                font-size: $font-predeterminado;                  /*1.5rem*/
+                text-transform: uppercase;
+            }
+            .card-text{
+                font-size:$font-predeterminado;                  /*1.5rem*/
+            }
+        }
+    }
+}/*fin seccion cards*/
+.iconos{    /*SECCION DE ICONOS EN BLANCO Y NEGRO*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: ($margin-top*10)+5;                      /*15rem    APLICO OPERACIONES SCSS*/
+    margin-bottom:$margin-botom*6;                   /*12rem*/
+    .iconos__item{
+        text-align: center;
+        .iconos__img{
+            width: 15rem;
+        }
+    }/*fin seccion iconos*/
+}
+.video{                /*VIDEO YOUTUBE */
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    .video__titulo{
+        font-size: 2rem;
+    }/* fin seccion video*/
+}
+.registro{           /*ULTIMA SECCION DEL main-INDEX */
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color:#faa0a148;
+    .registro__email{
+        width: 25rem;
+    }
+    .registro__boton{
+        color: #000;
+        background-color: #faa0a2;
+        border-color: white;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        width: 6rem;
+        .registro__boton:hover{
+            background-color: rgb(114, 112, 112);
+            color: white;
+            border-color: #faa0a2;        
+        }
+    }/*fin seccion registro*/
+}
+/*error 404*/
+.error__img{
+    background-image: url(images/error.png);
+    background-size: cover;
+    height: 100vh;
+}
+

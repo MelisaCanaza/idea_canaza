@@ -1,0 +1,26 @@
+@import "variables.scss";
+
+.preguntasFrec> h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: $margin-top+1;           /*2rem*/
+    margin-bottom: $margin-botom+3;            /*5rem*/
+
+}
+.preguntasFrec h3{
+    text-align: start;/*esta por defecto pero nose porque me alinea en el centro en conjunto con el h2*/
+    margin-top: 2rem;
+}
+
+.preguntas__item{
+    background-color: rgb(207, 207, 207);
+}
+.preguntas__item--texto{
+    font-size: 1.5rem;
+}
+.ofertasRegistro{
+    margin-top: $margin-top*2;   /*operacion simple = 2rem*/
+}
+.accordion{
+    margin-bottom: ($margin-botom*2)+1;/*operacion simple =5 rem*/
+}

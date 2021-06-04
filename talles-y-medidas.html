@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="tienda online de dorothy-indumentaria femenina seccion talles y medidas: encontraras la tabla con las medidas que usamos para hacer nuestra ropa tanto de invierno como verano y una imagen que te ayudara a saber como medirte y dar con el talle correcto">
+        <meta name="keywords" content="tabla, medidas, centimetros">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--fuente de google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"><!--bootstrap-->
+        <link rel="stylesheet" href="css/mimain.css"><!--enlace para scss-->
+        
+        <title>Dorothy-Talles y medidas</title>
+    </head>
+    <body>
+        <header>
+              
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+                
+                <div class="container-fluid contenido__hamburguesa">
+                    <div class="contenido__logo"> <!--logo-->
+                        <h1 class="contenido__titulo">
+                            <a class="contenido__enlace"href="index.html">Dorothy</a>
+                        </h1>
+                        <p class="contenido__subtitulo">indumentaria femenina</p>
+                    </div> 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                    <div class="collapse navbar-collapse contenido__menu" id="navbarScroll"><!--menu-->
+                        <div>
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active contenido__menu--item" aria-current="page" href="index.html">inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle contenido__menu--item" href="productos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        productos      
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__new">nueva temporada</a></li>
+                                        <li><a class="dropdown-item contenido__menu--subitem"href="productos.html #productos__accesorios">accesorios</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__hotsale">hot sale</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="talles-y-medidas.html">talles y medidas</a>
+                                </li>
+                        
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="preguntas-frecuentes.html">preguntas frecuentes</a>
+                                </li>
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="contactanos.html">contactanos</a>
+                                </li>
+                            </ul>
+
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        <div>
+                            <img class="contenido__menu--carrito" src="images/carrito.png" >
+                        </div>
+                    </div>                  
+                </div>
+            </nav>                     
+        </header> 
+        <main>
+
+            <section id="mapa__tabla">
+                <h2 class="tabla__titular">Talles y medidas</h2>
+                <h3 class="tabla__titular">¡Busca tu talle!</h3>
+                <h4 class="tabla__subtitular">* Tabla representada en cm.</h4>
+
+                <div class="talles">
+                    
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class="talles__titulo">
+                            <th scope="col" class="talles__titulo--item">talle</th>
+                            <th scope="col" class="talles__titulo--item">busto</th>
+                            <th scope="col" class="talles__titulo--item">cadera</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="talles__main">
+                            <th scope="row" class="talles__main--item">XS 38</th>
+                            <td class="talles__main--item">80-84</td>
+                            <td class="talles__main--item">80-84</td>
+                          </tr>
+
+                          <tr class="talles__main">
+                            <th scope="row"  class="talles__main--item">S 40</th>
+                            <td  class="talles__main--item">84-88</td>
+                            <td  class="talles__main--item">88-92</td>
+                          </tr>
+
+                          <tr class="talles__main">
+                            <th scope="row" class="talles__main--item">M 42</th>
+                            <td  class="talles__main--item">88-92</td>
+                            <td  class="talles__main--item">92-96</td>
+                          </tr>
+
+                          <tr class="talles__main">
+                            <th scope="row" class="talles__main--item">XL 46</th>
+                            <td class="talles__main--item">96-100</td>
+                            <td class="talles__main--item">100-106</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                      
+                    <div class="talles__imagen">
+                        <img class="talles__imagen-item" src="images/talles.jpg" alt="Imagen de talles">
+                    </div>
+                </div>
+            </section>
+            <section class="registro">
+                <p class="registro__texto">¿Querés recibir nuestras ofertas?¡Registrate y comenza a disfrutarlas!</p>
+                <form method="POST">
+                    <label class="registro__label">Email</label>
+                    <input class="registro__email" type="email" placeholder="email" required>
+                    <button class="registro__boton">Enviar</button>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer><!--FOOTER-->
+            
+            <div class="footer__info">
+                <p class="footer__texto">Contacto: 011 156655-4433 </p>
+                <address class="footer__texto">dorothyoficial@dorothy.com</address>
+                <p class="footer__texto">Copyright 2021 © dorothy</p>
+                <p class="footer__texto">Dorothy Todos los derechos reservados</p>
+                <p class="footer__texto">Seguinos en nuestras redes</p>
+
+            </div>
+
+            <div class="footer__redes">
+                    
+                <a class="footer__iconos" href="https://www.facebook.com" target="_BLANK"><img src="images/footer/facebook.png" alt="icono facebook" width="20" title="Facebook"></a>
+                    
+                <a class="footer__iconos" href="https://www.instagram.com" target="_BLANK"><img src="images/footer/instagram.png" alt="icono instagram" width="20" title="Instagram"></a>
+                    
+                <a class="footer__iconos" href="https://www.twitter.com" target="_BLANK"><img src="images/footer/twitter.png" alt="icono twitter" width="20" title="twitter"></a>
+                    
+            </div>
+                
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>     
+    </body>
+</html>

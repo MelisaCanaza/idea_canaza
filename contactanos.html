@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tienda online de dorothy-indumentaria femenina en esta seccion encontraras el formulario de contacto para que te podamos ayudar con tus dudas, consultas y/o reclamos">
+    <meta name="keywords" content="consultas, preguntas, reclamos">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--fuente de google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"><!--bootstrap-->
+    <link rel="stylesheet" href="css/mimain.css"><!--enlace para scss-->
+    
+    <title>Dorothy-Contacto</title>
+  </head>
+
+  <body>
+    <header>
+              
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+          
+        <div class="container-fluid contenido__hamburguesa">
+          <div class="contenido__logo"> <!--logo-->
+            <h1 class="contenido__titulo">
+              <a class="contenido__enlace"href="index.html">Dorothy</a>
+            </h1>
+            <p class="contenido__subtitulo">indumentaria femenina</p>
+          </div> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            
+          <div class="collapse navbar-collapse contenido__menu" id="navbarScroll"><!--menu-->
+            <div>
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active contenido__menu--item" aria-current="page" href="index.html">inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle contenido__menu--item" href="productos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    productos      
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__new">nueva temporada</a></li>
+                    <li><a class="dropdown-item contenido__menu--subitem"href="productos.html #productos__accesorios">accesorios</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__hotsale">hot sale</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="talles-y-medidas.html">talles y medidas</a>
+                </li>                  
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="preguntas-frecuentes.html">preguntas frecuentes</a>
+                </li>
+                <li class="nav-item contenido__menu--item">
+                  <a class="nav-link" href="contactanos.html">contactanos</a>
+                </li>
+              </ul>
+
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+            <div>
+              <img class="contenido__menu--carrito" src="images/carrito.png" >
+            </div>
+          </div>                  
+        </div>
+      </nav>                     
+    </header>
+
+
+    <main>
+      <section class="formulario"><!--FORMULARIO-->
+       
+        <h2 class="formulario__titulo tabla__titular">Formulario de contacto</h2><!--AQUI IMPLEMENTE BEM-->
+        
+      </section>  
+      <section>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4 position-relative">
+            <label for="validationTooltip01" class="form-label">Nombre y apellido:</label>
+            <input type="text" class="form-control" id="validationTooltip01"placeholder="Nombre" required>
+            <div class="valid-tooltip">
+              ¡Vas bien!
+            </div>
+
+          </div>
+
+          <div class="col-md-4 position-relative">
+            <label for="validationTooltip02" class="form-label">Teléfono:</label>
+            <input type="text" class="form-control" id="validationTooltip02" placeholder="Teléfono"required>
+            <div class="valid-tooltip">
+              ¡Vas bien!
+            </div>
+          </div>
+
+          <div class="col-md-4 position-relative">
+            <label for="validationTooltipUsername" class="form-label">Mail:</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Mail"aria-describedby="validationTooltipUsernamePrepend" required>
+            </div>
+            <div class="invalid-tooltip">
+              Elige un mail válido
+            </div>
+          </div>
+            
+          <div class="col-md-3 position-relative">
+            <label for="validationTooltip04" class="form-label">¿Desde dónde nos escribes?</label>
+            <select class="form-select" id="validationTooltip04" required>
+              <option selected disabled value="">Elige tu provincia</option>
+              <option>CABA</option>
+              <option>Buenos Aires</option>
+              <option>Resto del país</option>
+            </select>
+
+            <div class="invalid-tooltip">
+              Please select a valid state.
+            </div>
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-text">Comentarios:</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+              <label class="form-check-label" for="inlineFormCheck">
+                ¿Quieres recibir nuestro newsletter?
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary formulario__boton" type="submit">Enviar formulario</button>
+          </div>
+        </form>
+      
+      </section>
+    </main>
+
+    <footer><!--FOOTER-->
+            
+      <div class="footer__info">
+          <p class="footer__texto">Contacto: 011 156655-4433 </p>
+          <address class="footer__texto">dorothyoficial@dorothy.com</address>
+          <p class="footer__texto">Copyright 2021 © dorothy</p>
+          <p class="footer__texto">Dorothy Todos los derechos reservados</p>
+          <p class="footer__texto">Seguinos en nuestras redes</p>
+
+      </div>
+
+      <div class="footer__redes">
+              
+        <a class="footer__iconos" href="https://www.facebook.com" target="_BLANK"><img src="images/footer/facebook.png" alt="icono facebook" width="20" title="Facebook"></a>
+                    
+        <a class="footer__iconos" href="https://www.instagram.com" target="_BLANK"><img src="images/footer/instagram.png" alt="icono instagram" width="20" title="Instagram"></a>
+            
+        <a class="footer__iconos" href="https://www.twitter.com" target="_BLANK"><img src="images/footer/twitter.png" alt="icono twitter" width="20" title="twitter"></a>
+      </div>
+          
+  </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+  </body>
+
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="tienda online de dorothy-indumentaria femenina en esta sección encontraras todos los articulos tanto de temporada como de liquidacion">
+        <meta name="keywords" content="moda, sacos, sweaters, hot sale, vestidos, blusa, camisas, camisetas, remeras, polleras, bufandas,gorros">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!--fuente de google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:wght@300&family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"><!--bootstrap-->
+        <link rel="stylesheet" href="css/mimain.css"><!--enlace para scss-->
+        
+        <title>Dorothy-Productos</title>
+    </head>
+
+    <body>
+        <header>
+              
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+                
+                <div class="container-fluid contenido__hamburguesa">
+                    <div class="contenido__logo"> <!--logo-->
+                        <h1 class="contenido__titulo">
+                            <a class="contenido__enlace"href="index.html">Dorothy</a>
+                        </h1>
+                        <p class="contenido__subtitulo">indumentaria femenina</p>
+                    </div> 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                    <div class="collapse navbar-collapse contenido__menu" id="navbarScroll"><!--menu-->
+                        <div>
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active contenido__menu--item" aria-current="page" href="index.html">inicio</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle contenido__menu--item" href="productos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        productos      
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                        <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__new">nueva temporada</a></li>
+                                        <li><a class="dropdown-item contenido__menu--subitem"href="productos.html #productos__accesorios">accesorios</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item contenido__menu--subitem" href="productos.html #productos__hotsale">hot sale</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="talles-y-medidas.html">talles y medidas</a>
+                                </li>
+                        
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="preguntas-frecuentes.html">preguntas frecuentes</a>
+                                </li>
+                                <li class="nav-item contenido__menu--item">
+                                    <a class="nav-link" href="contactanos.html">contactanos</a>
+                                </li>
+                            </ul>
+
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        <div>
+                            <img class="contenido__menu--carrito" src="images/carrito.png" >
+                        </div>
+                    </div>                  
+                </div>
+            </nav>                     
+        </header>
+
+        <main class="productos">
+
+            <div class="contenido__imagen">
+                <img class="contenido__imagen--item" src="images/img-prod.jpg">
+            </div>
+
+            <section id="productos__new">
+                
+                <h2 class="productos__titular--item">Nueva colección #2021</h2>
+                <div class="productos__contenedor">        
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/campera-reversible.jpg" alt="campera" title="campera de dama">
+                        <p>campera parisian reversible </p>
+                        <p>$5.999</p>
+                        
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/campera-sirena.jpg" alt="campera" title="campera de dama">
+                        <p>campera sport</p>
+                        <p>$6.499</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/parca.jpg" alt="parca" title="parca de dama">
+                        <p>parca</p><p>$7.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/saco-largoabierto.jpg" alt="saco" title="saco largo">
+                        <p>saco largo abierto de morley</p>
+                        <p>$1.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/blazer-unboton.jpg" alt="blazer" title="blazer de un boton">
+                        <p>blazer c/ un boton </p>
+                        <p>$3.499</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/poleranewseason.jpg" alt="polera" title="polera">
+                        <p>poleron de lanita </p>
+                        <p>$1.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/poncho-new.jpg" alt="poncho" title="poncho">
+                        <p>poncho con manga liso</p>
+                        <p>$1.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/sacon-largo.jpg" alt="sacon" title="sacon largo">
+                        <p>sacon de paño largo </p>
+                        <p>$6.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/swetercuelloredondo-new.jpg" alt="sweter" title="sweter cuello redondo">
+                        <p>sweater cuello redondo </p><p>$1.299</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/tapado-capucharojo.jpg" alt="tapado" title="tapado rojo">
+                        <p>tapado de paño con capucha </p>
+                        <p>$6.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/sweterrombos-new.jpg" alt="sweter" title="sweter con rombos">
+                        <p>sweater con rombos </p>
+                        <p>$2.199</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/sweterlargo-new.jpg" alt="sweter largo" title="sweter">
+                        <p>Sweater altair</p>
+                        <p>$1.999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="productos__accesorios">
+                
+                <h2 class="productos__titular--item">Accesorios</h2>
+                <div class="productos__contenedor">
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/setscrunchies.jpeg" alt="scrunchies" title="set de scrunchies">
+                        <p>set scrunchies</p>
+                        <p>$250</p>
+                        <a href="#">comprar</a>
+                    </div>
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/tapaboca-accesorios.jpg" alt="tapaboca" title="tapaboca">
+                        <p>tapaboca animal print</p>
+                        <p>$250</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/bigscrunchie-accesorios.jpeg" alt="scrunchie" title="scrunchie">
+                        <p>big scrunchie</p>
+                        <p>$200</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/bufanda-accesorio.jpg" alt="bufanda" title="bufanda">
+                        <p>bufanda con bolsillo</p>
+                        <p>$950</p>
+                        <a href="#">comprar </a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/bufandacherry-accesorio.jpeg" alt="bufanda" title="bufanda">
+                        <p>bufanda con pompones</p>
+                        <p>$900</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/gorro-arizona.jpeg" alt="gorro" title="gorro">
+                        <p>gorro</p>
+                        <p>$500</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/aromatizante-textil.jpeg" alt="aromatizante textil" title="aromatizante para ropa">
+                        <p>aromatizante textil </p>
+                        <p>$350</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/bufanda-scooby.jpeg"alt="bufanda" title="bufanda">
+                        <p>bufanda flecos</p>
+                        <p>$900</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/ruana-infinity.jpeg" alt="ruana" title="ruana">
+                        <p>ruana</p>
+                        <p>$1.900</p>
+                        <a href="#">comprar</a>
+                    </div>
+                                 
+                </div>
+            </section>
+
+            <section id="productos__hotsale">
+                
+                <h2 class="productos__titular--item">¡No te pierdas el hot sale!</h2>
+                <div class="productos__contenedor">
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/monocorto-hotsale.jpg" alt="mono" title="mono">
+                        <p>mono corto de modal</p>
+                        <p>$1699</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/muscubreteles-hotsale.jpg" alt="musculosa" title="musculosa con breteles">
+                        <p>musculosa con breteles</p>
+                        <p>$699</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/musculosa-modalhotsale.jpg" alt="musculosa" title="musculosa de modal">
+                        <p>musculosa de modal</p>
+                        <p>$899</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/remeracuellov-hotsale.jpg" alt="remera" title="remera cuello en v">
+                        <p>remera cuello v</p>
+                        <p>$699</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/remeratrecuartos-hotsale.jpg" alt="remera" title="remera manga tres cuartos">
+                        <p>remera manga 3/4</p>
+                        <p>$999</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/vestido-muscuhotsale.jpg" alt="vestido" title="vestido musculosa">
+                        <p>vestido con escote en espalda</p>
+                        <p>$1.399</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/vestidocorto-hotsale.jpg" alt="vestido" title="vestido corto">
+                        <p>vestido de tiras cruzadas en espalda</p>
+                        <p>$1.399</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/vestidofloral-hotsale.jpg" alt="vestido" title="vestido floral">
+                        <p>vestido musculosa floral</p>
+                        <p>$1.699</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/vestidolargo-lazohotsale.jpg" alt="vestido" title="vestido largo">
+                        <p>vestido largo rayado</p>
+                        <p>$1.699</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/vestidosin-mangashotsale.jpg" alt="vestido" title="vestido sin mangas">
+                        <p>vestido sin mangas combinado</p>
+                        <p>$1.599</p>
+                        <a href="#">comprar</a>
+                    </div>
+
+                    <div class="productos__contenedor--item">
+                        <img src="images/galeriadorothy/remeramodal-hotsale.jpg" alt="remera" title="remera de modal">
+                        <p>remera de modal</p>
+                        <p>$799</p>
+                        <a href="#">comprar</a>
+                    </div>
+                                
+                </div>
+            </section>
+
+            
+            <section class="registro">
+                <p class="registro__texto">¿Querés recibir nuestras ofertas?¡Registrate y comenzá a disfrutarlas!</p>
+                <form method="POST">
+                    <label class="registro__label">Email</label>
+                    <input class="registro__email" type="email" placeholder="email" required>
+                    <button class="registro__boton">Enviar</button>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer><!--FOOTER-->
+            
+            <div class="footer__info">
+                <p class="footer__texto">Contacto: 011 156655-4433 </p>
+                <address class="footer__texto">dorothyoficial@dorothy.com</address>
+                <p class="footer__texto">Copyright 2021 © dorothy</p>
+                <p class="footer__texto">Dorothy Todos los derechos reservados</p>
+                <p class="footer__texto">Seguinos en nuestras redes</p>
+
+            </div>
+
+            <div class="footer__redes">
+                    
+                <a class="footer__iconos" href="https://www.facebook.com" target="_BLANK"><img src="images/footer/facebook.png" alt="icono facebook" width="20" title="Facebook"></a>
+                    
+                <a class="footer__iconos" href="https://www.instagram.com" target="_BLANK"><img src="images/footer/instagram.png" alt="icono instagram" width="20" title="Instagram"></a>
+                    
+                <a class="footer__iconos" href="https://www.twitter.com" target="_BLANK"><img src="images/footer/twitter.png" alt="icono twitter" width="20" title="twitter"></a>
+                    
+            </div>
+                
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
