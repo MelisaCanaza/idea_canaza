@@ -6,6 +6,8 @@
     word-spacing: .7rem;
     font-size: bold;
     margin-top: 2vh; 
+    background-color: $rosadifuminado;
+    margin-bottom: $margin-botom;
 }
 
 .contenido__imagen{                /*img principal de index*/
@@ -34,62 +36,70 @@
     .container__carrusel--contenedorboton{
         display: flex;
         justify-content: center;
-        .container__carrusel--boton{        /*ENLACE "VER TODOS LOS PRODUCTOS */
-            text-transform: uppercase;
-            text-align: center;
-            background-color: #faa0a2;
-            color: #312225;
-            border-radius: 2rem;
-            padding: 0.5rem 1.5em;
-            font-size: $font-predeterminado - 0.1;                  /*1.4rem APLICANDO  OPERACION SCSS*/
-            margin-top: $margin-top+1;                              /*2 rem*/
-            .container__carrusel--boton:hover{
-                text-decoration: underline;
-                background-color: rgb(114, 112, 112);
-                color: #faa0a2;
-                
-            }                
-        }         
+        
     }
-}/*fin seccion carrusel+enlace*/
+}
+.container__carrusel--boton{        /*ENLACE "VER TODOS LOS PRODUCTOS */
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #faa0a2;
+    color: #312225;
+    border-radius: 2rem;
+    border-color: #312225;
+    padding: 0.5rem 1.5em;
+    font-size: $font-predeterminado - 0.1;                  /*1.4rem APLICANDO  OPERACION SCSS*/
+    margin-top: $margin-top+1;                              /*2 rem*/
+                      
+}   /*fin seccion carrusel+enlace*/      
+.container__carrusel--boton:hover{
+    text-decoration: underline;
+    background-color: rgb(114, 112, 112);
+    color: #faa0a2;
+    border-color: #faa0a2;
+}
 
 .cardex__titular{       /*SECCION DE CARDS DEL INDEX*/
+    margin-top: $margin-top+1;
     background-color: $rosadifuminado;                /* #faa0a148  APLICO VARIABLE*/
     text-align: center;    
 }
 .cardex__list{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat (4, 1fr);
     justify-items: center;
-    .cardex__list--item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5vh;
-        width: 25rem;
-        .card-body {
-            text-align: center;
-            .cardex__list--boton{
-                color: #000;
-                background-color: #faa0a2;
-                border-color: #000;
-                font-size: 1.5rem;
-                .cardex__list--boton:hover{
-                    background-color: rgb(114, 112, 112);
-                    color: #faa0a2;
-                    border-color: #faa0a2;
-                }
-            }
-            .card-title{
-                font-size: $font-predeterminado;                  /*1.5rem*/
-                text-transform: uppercase;
-            }
-            .card-text{
-                font-size:$font-predeterminado;                  /*1.5rem*/
-            }
-        }
-    }
-}/*fin seccion cards*/
+}
+.cardex__list--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    width: 25rem;
+    background-color: #c7bcbc;
+}
+.card-body {
+    text-align: center;            
+}
+.cardex__list--boton{
+    color: #000;
+    background-color: #faa0a2;
+    border-color: #000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.cardex__list--boton:hover{
+    background-color: rgb(114, 112, 112);
+    color: #faa0a2;
+    border-color: #faa0a2;
+}
+.card-title{
+    font-size: $font-predeterminado;                  /*1.5rem*/
+    text-transform: uppercase;
+}
+.card-text{
+    font-size:$font-predeterminado;                  /*1.5rem*/
+}
+
+/*fin seccion cards*/
 .iconos{    /*SECCION DE ICONOS EN BLANCO Y NEGRO*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

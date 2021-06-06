@@ -1,3 +1,4 @@
+@import "variables.scss";
 @each $redes in facebook, instagram, twitter{
     .footer__iconos.#{$redes}{
         background-image: url(images/footer/#{$redes}.png);
@@ -14,9 +15,11 @@ footer{                                         /* FOOTER */
     .footer__info {
         text-align: center;
     }
-    .footer__redes{
-        text-align: center;
-        margin-top: .5rem;
-    
-    }      
+        
+}
+.footer__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: $margin-top;
+    margin-bottom: $margin-botom - 1;
 }

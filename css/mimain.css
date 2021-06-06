@@ -18,14 +18,25 @@ main {
   margin: 0 auto;
   justify-items: center; }
 
-.contenido__titulo .contenido__enlace {
+/*
+.contenido__titulo{}*/
+.navbar {
+  padding: 0; }
+
+.contenido__titulo {
   font-family: dancing script;
   font-size: 7rem;
   /*NOMBRE MARCA*/
+  text-decoration: none; }
+  .contenido__titulo .contenido__titulo:hover {
+    color: #ff6acd; }
+
+.contenido__enlace {
   text-decoration: none;
   color: #faa0a2; }
-  .contenido__titulo .contenido__enlace .contenido__enlace:hover {
-    color: #ff6acd; }
+
+.contenido__enlace:hover {
+  color: #727070; }
 
 .contenido__subtitulo {
   text-transform: uppercase;
@@ -56,16 +67,18 @@ main {
     color: #0c0808;
     border-color: #faa0a2;
     background-color: #faa0a2; }
-    .contenido__menu .btn-outline-success .btn-outline-success:hover {
-      background-color: #727070;
-      color: #faa0a2;
-      border-color: #faa0a2; }
+  .contenido__menu .btn-outline-success:hover {
+    background-color: #727070;
+    color: #faa0a2;
+    border-color: #faa0a2; }
 
 .contenido__info {
   text-align: center;
   word-spacing: .7rem;
   font-size: bold;
-  margin-top: 2vh; }
+  margin-top: 2vh;
+  background-color: #faa0a148;
+  margin-bottom: 2rem; }
 
 .contenido__imagen {
   /*img principal de index*/
@@ -90,58 +103,71 @@ main {
   .container__carrusel .container__carrusel--contenedorboton {
     display: flex;
     justify-content: center; }
-    .container__carrusel .container__carrusel--contenedorboton .container__carrusel--boton {
-      /*ENLACE "VER TODOS LOS PRODUCTOS */
-      text-transform: uppercase;
-      text-align: center;
-      background-color: #faa0a2;
-      color: #312225;
-      border-radius: 2rem;
-      padding: 0.5rem 1.5em;
-      font-size: 1.4rem;
-      /*1.4rem APLICANDO  OPERACION SCSS*/
-      margin-top: 2rem;
-      /*2 rem*/ }
-      .container__carrusel .container__carrusel--contenedorboton .container__carrusel--boton .container__carrusel--boton:hover {
-        text-decoration: underline;
-        background-color: #727070;
-        color: #faa0a2; }
+
+.container__carrusel--boton {
+  /*ENLACE "VER TODOS LOS PRODUCTOS */
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #faa0a2;
+  color: #312225;
+  border-radius: 2rem;
+  border-color: #312225;
+  padding: 0.5rem 1.5em;
+  font-size: 1.4rem;
+  /*1.4rem APLICANDO  OPERACION SCSS*/
+  margin-top: 2rem;
+  /*2 rem*/ }
 
 /*fin seccion carrusel+enlace*/
+.container__carrusel--boton:hover {
+  text-decoration: underline;
+  background-color: #727070;
+  color: #faa0a2;
+  border-color: #faa0a2; }
+
 .cardex__titular {
   /*SECCION DE CARDS DEL INDEX*/
+  margin-top: 2rem;
   background-color: #faa0a148;
   /* #faa0a148  APLICO VARIABLE*/
   text-align: center; }
 
 .cardex__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat 4, 1fr;
   justify-items: center; }
-  .cardex__list .cardex__list--item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    width: 25rem; }
-    .cardex__list .cardex__list--item .card-body {
-      text-align: center; }
-      .cardex__list .cardex__list--item .card-body .cardex__list--boton {
-        color: #000;
-        background-color: #faa0a2;
-        border-color: #000;
-        font-size: 1.5rem; }
-        .cardex__list .cardex__list--item .card-body .cardex__list--boton .cardex__list--boton:hover {
-          background-color: #727070;
-          color: #faa0a2;
-          border-color: #faa0a2; }
-      .cardex__list .cardex__list--item .card-body .card-title {
-        font-size: 1.5rem;
-        /*1.5rem*/
-        text-transform: uppercase; }
-      .cardex__list .cardex__list--item .card-body .card-text {
-        font-size: 1.5rem;
-        /*1.5rem*/ }
+
+.cardex__list--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  width: 25rem;
+  background-color: #c7bcbc; }
+
+.card-body {
+  text-align: center; }
+
+.cardex__list--boton {
+  color: #000;
+  background-color: #faa0a2;
+  border-color: #000;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.cardex__list--boton:hover {
+  background-color: #727070;
+  color: #faa0a2;
+  border-color: #faa0a2; }
+
+.card-title {
+  font-size: 1.5rem;
+  /*1.5rem*/
+  text-transform: uppercase; }
+
+.card-text {
+  font-size: 1.5rem;
+  /*1.5rem*/ }
 
 /*fin seccion cards*/
 .iconos {
@@ -213,9 +239,12 @@ footer {
   padding-bottom: 2rem; }
   footer .footer__info {
     text-align: center; }
-  footer .footer__redes {
-    text-align: center;
-    margin-top: .5rem; }
+
+.footer__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .productos__imagen {
   margin-top: 3rem;
@@ -385,7 +414,9 @@ footer {
 
 @media (min-width: 1024px) {
   .cardex__list {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  footer {
+    font-size: 1.2rem; } }
 
 /* ............................ PRODUCTOS ................................*/
 @media screen and (min-width: 320px) {
