@@ -143,7 +143,7 @@ main {
   align-items: center;
   margin-top: 5vh;
   width: 25rem;
-  background-color: #c7bcbc; }
+  background-color: #c7bcbc6c; }
 
 .card-body {
   text-align: center; }
@@ -199,22 +199,24 @@ main {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
-  background-color: #faa0a148;
-  /*fin seccion registro*/ }
+  background-color: #faa0a148; }
   .registro .registro__email {
     width: 25rem; }
-  .registro .registro__boton {
-    color: #000;
-    background-color: #faa0a2;
-    border-color: white;
-    border-radius: .5rem;
-    font-size: 1.5rem;
-    width: 6rem; }
-    .registro .registro__boton .registro__boton:hover {
-      background-color: #727070;
-      color: white;
-      border-color: #faa0a2; }
 
+.registro__boton {
+  color: #000;
+  background-color: #faa0a2;
+  border-color: white;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  width: 6rem; }
+
+.registro__boton:hover {
+  background-color: #727070;
+  color: white;
+  border-color: #faa0a2; }
+
+/*fin seccion registro*/
 /*error 404*/
 .error__img {
   background-image: url(images/error.png);
@@ -245,6 +247,9 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1rem;
   margin-bottom: 1rem; }
+
+.footer__iconos--img {
+  width: 2rem; }
 
 .productos__imagen {
   margin-top: 3rem;
@@ -345,7 +350,8 @@ footer {
   background-color: #cfcfcf; }
 
 .preguntas__item--texto {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: black; }
 
 .ofertasRegistro {
   margin-top: 2rem;
@@ -354,6 +360,9 @@ footer {
 .accordion {
   margin-bottom: 5rem;
   /*operacion simple =5 rem*/ }
+
+.accordion-button:not(.collapsed) {
+  background-color: pink; }
 
 /*  ....................... INDEX ........................... */
 @media (max-width: 767px) {
@@ -387,18 +396,13 @@ footer {
   .registro__email {
     width: 15rem; }
   .registro__label {
-    display: none; }
-  .footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-  .footer__texto {
-    font-size: 1.3rem; } }
+    display: none; } }
 
 @media screen and (min-width: 568px) {
   .carousel-dark {
     width: 50%; } }
 
-/*NO TOCAR NADA hasta aca. MOBILE FIRST OK*/
+/* MOBILE FIRST OK*/
 @media (min-width: 768px) {
   .cardex__list {
     grid-template-columns: repeat(2, 1fr); }
@@ -441,6 +445,7 @@ footer {
 
 /* ............................... TALLES Y MEDIDAS.............................*/
 @media (min-width: 320px) {
+  /*mobile first*/
   .talles {
     flex-direction: column; } }
 
@@ -448,3 +453,19 @@ footer {
   .talles {
     justify-content: space-evenly;
     flex-direction: row; } }
+
+/*footer*/
+@media (min-width: 320px) {
+  .footer__info {
+    grid-template-columns: 1fr; }
+  .footer__texto {
+    font-size: 1.2rem; } }
+
+@media (min-width: 1024px) {
+  .footer__info {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .footer__texto {
+    font-size: 1.4rem; } }

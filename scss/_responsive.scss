@@ -43,20 +43,14 @@
     .registro__label{
         display: none;
     }
-    .footer{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    .footer__texto{
-        font-size: 1.3rem;
-    }
+    
     
 }
 @media screen and (min-width: 568px) { 
     .carousel-dark{
         width: 50%;
     }
-}/*NO TOCAR NADA hasta aca. MOBILE FIRST OK*/
+}/* MOBILE FIRST OK*/
 @media(min-width: 768px){
     .cardex__list{
         grid-template-columns: repeat(2, 1fr);
@@ -110,7 +104,7 @@
     }
 }
 /* ............................... TALLES Y MEDIDAS.............................*/
-@media(min-width:320px){
+@media(min-width:320px){/*mobile first*/
     .talles{
         flex-direction: column;
     }
@@ -121,3 +115,27 @@
     flex-direction: row;
     }
 }
+
+/*footer*/
+@media(min-width:320px){
+    .footer__info{
+        grid-template-columns: 1fr;
+    }
+    .footer__texto{
+        font-size: 1.2rem;
+    }
+    
+}
+@media(min-width:1024px){
+    .footer__info{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .footer__texto{
+        font-size: 1.4rem;
+    }
+}
+

@@ -74,7 +74,7 @@
     align-items: center;
     margin-top: 5vh;
     width: 25rem;
-    background-color: #c7bcbc;
+    background-color: #c7bcbc6c;
 }
 .card-body {
     text-align: center;            
@@ -129,20 +129,22 @@
     .registro__email{
         width: 25rem;
     }
-    .registro__boton{
-        color: #000;
-        background-color: #faa0a2;
-        border-color: white;
-        border-radius: .5rem;
-        font-size: 1.5rem;
-        width: 6rem;
-        .registro__boton:hover{
-            background-color: rgb(114, 112, 112);
-            color: white;
-            border-color: #faa0a2;        
-        }
-    }/*fin seccion registro*/
 }
+.registro__boton{
+    color: #000;
+    background-color:#faa0a2;
+    border-color: white;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    width: 6rem;
+}
+.registro__boton:hover{
+    background-color: rgb(114, 112, 112);
+    color: white;
+    border-color: #faa0a2;        
+}
+/*fin seccion registro*/
+
 /*error 404*/
 .error__img{
     background-image: url(images/error.png);

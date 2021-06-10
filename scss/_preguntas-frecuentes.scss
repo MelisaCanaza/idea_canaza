@@ -17,6 +17,7 @@
 }
 .preguntas__item--texto{
     font-size: 1.5rem;
+    color: black;
 }
 .ofertasRegistro{
     margin-top: $margin-top*2;   /*operacion simple = 2rem*/
@@ -24,4 +25,6 @@
 .accordion{
     margin-bottom: ($margin-botom*2)+1;/*operacion simple =5 rem*/
 }
-
+.accordion-button:not(.collapsed){
+    background-color: pink;
+}
