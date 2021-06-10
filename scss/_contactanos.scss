@@ -1,0 +1,22 @@
+.formulario__boton{
+    background-color: pink;
+    color: rgb(114, 112, 112);
+    border-color:rgb(114, 112, 112) ;
+}
+.formulario__boton:hover{
+    background-color:rgb(114, 112, 112) ;
+    color: pink;
+    border-color: pink;
+}
+.formulario__contenido{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    border: solid 2px rgb(114, 112, 112);
+    padding: 2rem;
+}
+.form-check-input{
+    background-color:pink;
+}
+.form-check-input:checked{
+    background-color:rgb(114, 112, 112) ;
+}
