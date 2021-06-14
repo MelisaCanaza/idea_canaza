@@ -22,8 +22,8 @@
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
-    .iconos__img{
-        width: 6rem;
+    .iconos .iconos__item .iconos__img{
+        width: 8rem;
     }
     .iconos__texto{
         font-size: 1.3rem;
@@ -43,7 +43,12 @@
     .registro__label{
         display: none;
     }
-    
+    .float {
+        width: 45px;
+        height: 45px;
+        bottom: 25px;
+        right: 25px;
+    }
     
 }
 @media screen and (min-width: 568px) { 

@@ -14,16 +14,17 @@
     .talles__main--item{
         text-align: center;
         border:solid 1px black;
+        align-content: center;
     }
-    
-} 
+}
+
 .table-hover{
-    width: $width-tabla*2;        /*40vh*/      /*operacion scss*/
+    width:40vh;
 }
 .tabla__titular{
-    background-color: $rosadifuminado;    /*#faa0a148*//*agrego variable */
+    background-color: $rosadifuminado; 
     text-align: center;
 }
 .tabla__subtitular{
-    margin-top: $margin-top*5;              /*operacion sass*/
+    margin-top: $margin-top*5;  
 }

@@ -144,7 +144,20 @@
     border-color: #faa0a2;        
 }
 /*fin seccion registro*/
-
+.float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 45px;
+    right: 45px;
+    background-color:#25D366; 
+    color:#FFF ;
+    border-radius: 6rem;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
 /*error 404*/
 .error__img{
     background-image: url(images/error.png);
