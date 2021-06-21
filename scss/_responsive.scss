@@ -107,6 +107,7 @@
     .productos__contenedor--item img{
         width: 20rem;
     }
+
     #productos__new h2{
         font-size: 3rem;
     }
@@ -116,7 +117,9 @@
     #productos__hotsale h2{
         font-size: 3rem;
     }
-
+    .cardex__list--item{
+        width: 22rem;
+    }
 }
 @media (min-width:768px){
     .productos__contenedor{

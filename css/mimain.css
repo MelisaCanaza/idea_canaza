@@ -494,7 +494,9 @@ footer {
   #productos__accesorios h2 {
     font-size: 3rem; }
   #productos__hotsale h2 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .cardex__list--item {
+    width: 22rem; } }
 
 @media (min-width: 768px) {
   .productos__contenedor {
