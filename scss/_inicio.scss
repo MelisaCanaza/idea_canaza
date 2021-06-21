@@ -59,7 +59,7 @@
 }
 
 .cardex__titular{       /*SECCION DE CARDS DEL INDEX*/
-    margin-top: $margin-top+1;
+    margin-top: 10rem;
     background-color: $rosadifuminado;                /* #faa0a148  APLICO VARIABLE*/
     text-align: center;    
 }
@@ -92,11 +92,11 @@
     border-color: #faa0a2;
 }
 .card-title{
-    font-size: $font-predeterminado;                  /*1.5rem*/
+    font-size: $font-predeterminado;                  
     text-transform: uppercase;
 }
 .card-text{
-    font-size:$font-predeterminado;                  /*1.5rem*/
+    font-size:$font-predeterminado;                 
 }
 
 /*fin seccion cards*/
@@ -104,7 +104,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    margin-top: ($margin-top*10)+5;                      /*15rem    APLICO OPERACIONES SCSS*/
+    margin-top: 15rem;                      
     margin-bottom:$margin-botom*6;                   /*12rem*/
     .iconos__item{
         text-align: center;

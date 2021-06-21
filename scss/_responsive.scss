@@ -30,6 +30,8 @@
     }
     .video{
         display: none;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
     .registro{
         width: 100%;
@@ -76,9 +78,18 @@
 @media (min-width:1024px){
     .cardex__list{
         grid-template-columns: repeat(4, 1fr);
+
+    }
+    .iconos{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
     }
     footer{
         font-size: 1.2rem;
+    }
+    .video{
+        margin-top: 3rem;
+        margin-bottom: 10rem;
     }
 }
  /* ............................ PRODUCTOS ................................*/
@@ -96,6 +107,16 @@
     .productos__contenedor--item img{
         width: 20rem;
     }
+    #productos__new h2{
+        font-size: 3rem;
+    }
+    #productos__accesorios h2{
+        font-size: 3rem;
+    }
+    #productos__hotsale h2{
+        font-size: 3rem;
+    }
+
 }
 @media (min-width:768px){
     .productos__contenedor{
@@ -142,5 +163,19 @@
     .footer__texto{
         font-size: 1.4rem;
     }
+}
+/* ......................contactanos.......................*/
+@media(min-width:320px){/*mobile first*/
+    .form-label{
+        font-size: 1.6rem;
+    }
+
+      
+}
+/* ...............preguntas frecuentes ........................*/
+@media(min-width:1024px){
+    .preguntas__item--texto{
+        font-size: 1.6rem;
+    } 
 }
 

@@ -127,7 +127,7 @@ main {
 
 .cardex__titular {
   /*SECCION DE CARDS DEL INDEX*/
-  margin-top: 2rem;
+  margin-top: 10rem;
   background-color: #faa0a148;
   /* #faa0a148  APLICO VARIABLE*/
   text-align: center; }
@@ -162,12 +162,10 @@ main {
 
 .card-title {
   font-size: 1.5rem;
-  /*1.5rem*/
   text-transform: uppercase; }
 
 .card-text {
-  font-size: 1.5rem;
-  /*1.5rem*/ }
+  font-size: 1.5rem; }
 
 /*fin seccion cards*/
 .iconos {
@@ -176,7 +174,6 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   margin-top: 15rem;
-  /*15rem    APLICO OPERACIONES SCSS*/
   margin-bottom: 12rem;
   /*12rem*/
   /*fin seccion iconos*/ }
@@ -304,9 +301,16 @@ footer {
 #productos__accesorios img {
   width: 28rem; }
 
+#productos__new h2 {
+  font-size: 5rem; }
+
 #productos__accesorios h2 {
   text-align: center;
-  margin-top: 2rem; }
+  margin-top: 10rem;
+  font-size: 5rem; }
+
+#productos__hotsale h2 {
+  font-size: 5rem; }
 
 .productos__promociones {
   text-align: center;
@@ -426,7 +430,9 @@ footer {
   .iconos__texto {
     font-size: 1.3rem; }
   .video {
-    display: none; }
+    display: none;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
   .registro {
     width: 100%; }
   .registro__texto {
@@ -462,8 +468,14 @@ footer {
 @media (min-width: 1024px) {
   .cardex__list {
     grid-template-columns: repeat(4, 1fr); }
+  .iconos {
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
   footer {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .video {
+    margin-top: 3rem;
+    margin-bottom: 10rem; } }
 
 /* ............................ PRODUCTOS ................................*/
 @media screen and (min-width: 320px) {
@@ -476,7 +488,13 @@ footer {
   #productos__accesorios img {
     width: 20rem; }
   .productos__contenedor--item img {
-    width: 20rem; } }
+    width: 20rem; }
+  #productos__new h2 {
+    font-size: 3rem; }
+  #productos__accesorios h2 {
+    font-size: 3rem; }
+  #productos__hotsale h2 {
+    font-size: 3rem; } }
 
 @media (min-width: 768px) {
   .productos__contenedor {
@@ -512,3 +530,14 @@ footer {
     padding-bottom: 1rem; }
   .footer__texto {
     font-size: 1.4rem; } }
+
+/* ......................contactanos.......................*/
+@media (min-width: 320px) {
+  /*mobile first*/
+  .form-label {
+    font-size: 1.6rem; } }
+
+/* ...............preguntas frecuentes ........................*/
+@media (min-width: 1024px) {
+  .preguntas__item--texto {
+    font-size: 1.6rem; } }
